@@ -1,0 +1,15 @@
+header {
+  display: fixed !important;
+}
+
+.counter {
+  border-radius: 50%;
+  margin: 0;
+  background: gray;
+  padding: 0px 8px;
+  display: flex;
+  align-items: center;
+  margin-top: 13px;
+  top: 0;
+  right: 0;
+}
