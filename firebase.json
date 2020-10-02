@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "mcdonalds-shop",
+  "private_key_id": "bdb955bd01d9d7a31e892d1dcda36a852ca38ab0",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCoMZ3G1pwNbeGP\nMS3ObRDhUoaMdLtUypZO14sO2aCpN5FoL5V9XCRdrC4KWmeX4QfeMHHI+tT3Fh9q\n9YMjK7FTWuanyBn/xTn6PjC+fa3JDwmO+YgtSi3lIa7doodHIoa4thZ2QP0bOH29\nB2PAB97f2dZFkNhesNRh2qhBUwCaue0hyeLouMHRv9WWO5ei+eeQhd8li0KNzE2E\ndsFAj+IfRbnL4NPbTysJDUeSFGHlJiIozhCkWrIqqvyKuSyEbm77/B2jMnRAMRtA\nqLP1RC6b26OqTYSTY81EqtLHLG/6hYsW0uJMh7KpO/QgwShpYBM0ENCSoh3zODO1\neDnpJdwhAgMBAAECggEAE2wLU/Xd9lUHyhZmkOLvoz1O3ohE8OvQmJEeSdw1R7ps\nIZOhF7qcqRkkBeZeS7UHc2UKYVLJuzCZodXGS2OVFKg3YLeO0ltkMF1JxALU9Gs2\nnNp8Gv1pDapVPDBeSQdtIYZGqL16HNBqAKU0+RdPlBozupEZKIdojFYzaLuyIwEA\n9ihe/kXtHxnfGiUb6F4fFwnSMnhn2bJDQDtCqbGXuIDOcM0xbxW9ufDds5Zp1Pvk\n9C5b39HCICXHERGUqZdnRWne9AsB+J+hfQpwRzGJdq9emPt9ASmT4BSz670VUl1d\nojaH8puLaO2icoIj2o+A3x8ac7ZeS0XmwijUCZ8PqwKBgQDdj8qGKRzltOCwBoVJ\n8Bz05sgHy7tR52rTw2ZQw4UL7a+DpQDVyH5MFv+yuqV/aEXWcKN1oLZLZk+5REH8\nhzlyCjuw5s2dzOGchpyZgSDLupHZfhGGDywqWX0p/tDYXX0yv3DX+FKchALMi9MF\nue7Ygp36iWWxqEWaUq7uODNT1wKBgQDCVkCzTtBre8wT/69VUmiwtJ1MBGrNXsI8\nJ5mrXdbV63qFJApMA39Y/oPr9EomoYJahZ+VmfjkkB53vbgSY9NlI41SW+5IlF+T\nfyDKDYMfqzWkQG0oOHVHpxTI669I54xIgHdlm4Elk8Z5BC9+ofSlMzj4y1f4NZWu\nDtirT8fQxwKBgEdyrS6iZ20z7RkWoTj8s3nOSkcpTdjVtb9gTchRpL/6ABWFykUm\niIPlDsQGKIRzjcHfRPcTwnWCIsdt2ZGj0cSSxDkB1ODERyUAy9M8ruTD33CxlNkU\nX3uwrAo04AhF7a/FyI/8xjcu4vAvTveTxBAR3vwB/sdRqlBfxYWQngy1AoGAbwkj\nHJAqi08HcmHDhyd3w4be3OElOMQsjHw/0+bg6gcKUOofrADPkUSSkY1ZlKrxNNFm\nNe7sg4NItTfD5VX+Iapng6gdBIEp/rdDP87qnXyQQJHDDJj9gXwYZxgqZahOwdoM\n3hQ0fQjq/JgEnwDgLEeRBK4CTEIpjHLVH0SNMV8CgYEAjYrz5WqoeOYeZFlKBC0u\nm0mO5w2GSHawiuG3bzI2wKaGkn3ArCKd4kIR4SBQSFWa1zydX2RIM+hJZiCvTZzc\njEifCvtvcsWjlsDepYjQc/GoW2Undd4wdG+rCQCaPFsh5QHIx/kHntBmaw4EmPAy\nWReYmBQL2eZW9IpF9OZd95E=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-xqt2w@mcdonalds-shop.iam.gserviceaccount.com",
+  "client_id": "103919016574735701621",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-xqt2w%40mcdonalds-shop.iam.gserviceaccount.com"
+}

@@ -1,13 +1,34 @@
+:root {
+  --color-amarillo: #ffcc00;
+  --color-gris: #9e9e9e;
+  --color-rojo: #f03536;
+  --color-negro: #333333;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
+}
+
 .Menu {
   margin: 0 120px;
+}
+
+.menu-title {
+  font-weight: bold;
+  font-size: 36px;
+  color: var(--color-negro);
 }
 
 .list {
   display: flex;
   overflow-x: auto;
-  border-bottom: 2px solid #9e9e9e;
   padding: 0 0 10px 0;
-  width: 78%;
+  position: relative;
+  width: 80%;
   margin: 0 auto;
   margin-bottom: 34px;
 }
@@ -20,6 +41,7 @@
   color: #333333;
   min-width: fit-content;
   font-weight: bold;
+  color: #636161;
   margin-right: 12px;
   margin-left: 12px;
 }
@@ -41,6 +63,7 @@
 
 .img-container {
   width: 100%;
+  padding: 4px;
 }
 
 .img-container img {
@@ -57,10 +80,14 @@
   color: #f13536;
 }
 
-.bag-container {
+.bagte {
   padding: 6px;
   background: white;
   border-radius: 100%;
+}
+
+.bagte img {
+  width: 20px;
 }
 
 /* .bag {
@@ -70,4 +97,60 @@
 .active {
   color: #f13536 !important;
   border-bottom: 2px sollid #f13536 !important;
+}
+
+.btn-amarillo-menu {
+  background: var(--color-amarillo);
+  padding: 10px 26px;
+  border: none;
+  font-weight: bold;
+  color: var(--color-negro);
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none !important;
+}
+
+.btn-vacio-menu {
+  background: white;
+  border: 1px solid gray;
+  padding: 10px 26px;
+  font-weight: bold;
+  color: var(--color-negro);
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none !important;
+}
+
+.vacio {
+  border: none;
+  outline: none !important;
+  margin: 0 10px;
+  background: none;
+  font-weight: 500;
+  color: var(--color-gris);
+}
+
+.rojo {
+  border: none;
+  outline: none !important;
+  margin: 0 10px;
+  background: none;
+  font-weight: 500;
+  color: var(--color-rojo);
+  border-bottom: 4px solid #f03536;
+  position: relative;
+  z-index: 20;
+  border-radius: 3px;
+}
+
+.loco {
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  background: #e2e2e2;
+  top: 26px;
+}
+
+ul button:first-child {
+  margin-left: 0 !important;
 }

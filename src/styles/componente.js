@@ -68,19 +68,12 @@ export const StyledJumbo = styled.div`
   color: black;
   margin-bottom: 5rem;
   overflow: hidden;
+  height: 90vh;
 
   div {
     width: 80vw;
   }
-  & h2 {
-    margin: 0;
-    font-weight: 500;
-    font-size: 1rem;
-  }
-  & small {
-    font-weight: 100;
-    font-size: 0.6rem;
-  }
+
   & img {
     width: 50vw;
   }

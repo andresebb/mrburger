@@ -2,26 +2,28 @@ import React, { useState, useContext } from "react";
 import { Link } from "gatsby";
 import "../styles/menuDetail.css";
 import back from "../images/previous.svg";
-import pan from "../images/pan.png";
-import cheese from "../images/queso.png";
-import lechuga from "../images/lechuga.png";
-import tocineta from "../images/tocineta.png";
-import huevo from "../images/huevo.png";
-import americana from "../images/americana.png";
 import { CartContext } from "../context";
+import Ingredientes from "./Ingredientes";
 
-const MenuDetail = ({ nombre, precio, imagen }) => {
+const MenuDetail = ({
+  nombre,
+  precio,
+  imagen,
+  stripe,
+  ingredientes,
+  probando,
+}) => {
+  debugger;
   const [quantity, setQuantity] = useState(1);
   const [dinero, setDinero] = useState({
     montoTotal: precio,
     montoInicial: precio,
   });
-  debugger;
 
   const { addToCart, cart, setLocalStorage } = useContext(CartContext);
 
   const handleSubmit = () => {
-    addToCart({ nombre, precio, imagen, quantity });
+    addToCart({ nombre, precio, imagen, quantity, stripe });
     setLocalStorage(cart);
   };
 
@@ -60,7 +62,7 @@ const MenuDetail = ({ nombre, precio, imagen }) => {
             </p>
             <div className="btn-control">
               <button onClick={handleQuit}>-</button>
-              <input type="text" value={quantity} />
+              <input className="input-control" type="text" value={quantity} />
               <button onClick={handlePlus}>+</button>
             </div>
             <div className="precio-container">
@@ -72,7 +74,8 @@ const MenuDetail = ({ nombre, precio, imagen }) => {
           </div>
         </div>
       </div>
-      <div>
+      <Ingredientes ingredientes={ingredientes} />
+      {/* <div>
         <span className="rojito">Ingredientes</span>
         <div className="linea"></div>
         <div className="ingredientes-container">
@@ -101,7 +104,7 @@ const MenuDetail = ({ nombre, precio, imagen }) => {
             <p>Lechuga</p>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

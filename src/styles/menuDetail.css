@@ -47,8 +47,10 @@
 }
 
 .btn-control button {
-  border: none;
   padding: 0 10px;
+  border: 1px solid #9e9e9e;
+  border-radius: 14%;
+  outline: none;
 }
 /* input {
   width: 10%;
@@ -91,4 +93,11 @@
 .ingrediente p {
   color: brown;
   font-weight: bold;
+}
+
+.input-control {
+  width: 6%;
+  border: none;
+  text-align: center;
+  outline: none;
 }

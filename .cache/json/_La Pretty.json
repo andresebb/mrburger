@@ -1,1 +1,1 @@
-{"pageContext":{"precio":5,"nombre":"La Pretty","imagen":"https://firebasestorage.googleapis.com/v0/b/mcdonalds-shop.appspot.com/o/laPretty.png?alt=media&token=58a59127-773d-4109-9813-68555a62460f"}}
+{"pageContext":{"ingredientes":["Artisan Roll","Beef Patty","Bacon","Egg","American Cheese","American Sauce"],"nombre":"La Pretty","imagen":"https://firebasestorage.googleapis.com/v0/b/mcdonalds-shop.appspot.com/o/laPretty.png?alt=media&token=58a59127-773d-4109-9813-68555a62460f","stripe":"price_1HXXMDHu94wrZKIKYnApkUzg","precio":5}}

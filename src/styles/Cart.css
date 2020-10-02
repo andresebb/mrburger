@@ -5,6 +5,10 @@
   --color-negro: #333333;
 }
 
+body {
+  font-family: "Fira Sans", sans-serif;
+}
+
 p {
   margin-bottom: 0;
 }
@@ -79,7 +83,44 @@ p {
   border-radius: 8px;
   background: #f5f5f5;
   color: #696969;
+  max-height: 300px;
 }
 
 .tax-input {
-  width:
+  width: 100%;
+  background: transparent;
+  border: 1px solid #dddddd;
+  padding: 6px;
+  border-radius: 8px;
+  outline: none;
+  margin-bottom: 6px;
+}
+
+.tax-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px !important;
+  font-weight: bold;
+}
+
+.mayor {
+  font-size: 24px;
+  color: #15143c;
+}
+
+.btn-checkout {
+  width: 100%;
+  background: #ffcc01;
+  color: #15143c;
+  border: none;
+  font-size: small;
+  font-weight: bold;
+  padding: 10px 14px;
+  border-radius: 8px;
+}
+
+.remove-icon {
+  max-width: 40%;
+  margin: 0 auto;
+}

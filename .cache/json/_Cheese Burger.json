@@ -1,1 +1,1 @@
-{"pageContext":{"precio":6.5,"nombre":"Cheese Burger","imagen":"https://firebasestorage.googleapis.com/v0/b/mcdonalds-shop.appspot.com/o/classicBurger.png?alt=media&token=b6da9bd2-af35-49ec-8616-d59eb7a4f3af"}}
+{"pageContext":{"ingredientes":["Artisan Roll","Beef Patty","Pickle Slices","American Cheese","Ketchup"],"nombre":"Cheese Burger","imagen":"https://firebasestorage.googleapis.com/v0/b/mcdonalds-shop.appspot.com/o/cheeseBurger.png?alt=media&token=939a4472-ab1d-48a7-831d-9c32169cb8a3","stripe":"price_1HXoHrHu94wrZKIKIjZ5YtXu","precio":6.5}}

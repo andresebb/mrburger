@@ -32,7 +32,7 @@ module.exports = {
     {
       resolve: "gatsby-source-firestore",
       options: {
-        credential: require("./firebase-config.json"),
+        credential: require("./firebase.json"),
         types: [
           {
             type: "Menu",
@@ -42,6 +42,8 @@ module.exports = {
               ingredientes: doc.ingredientes,
               precio: doc.precio,
               imagen: doc.imagen,
+              stripe: doc.stripe,
+              nuevo: doc.nuevo,
             }),
           },
         ],

@@ -1,15 +1,15 @@
 import React, { useState, useEffect, useContext } from "react";
 import { CartContext } from "../context";
 import { Link } from "gatsby";
-import burger from "../images/cheeseBurger.png";
 import "../styles/Cart.css";
 import backIcon from "../images/previous.svg";
 import removeIcon from "../images/remove.svg";
+import { loadStripe } from "@stripe/stripe-js";
 
 const Cart = () => {
   const { cart } = useContext(CartContext);
   const [total, setTotal] = useState(0);
-  console.log(cart);
+  const [stripe, setStripe] = useState();
 
   const getTotal = () => {
     setTotal(
@@ -19,7 +19,31 @@ const Cart = () => {
 
   useEffect(() => {
     getTotal();
+    setStripe(
+      window.Stripe(
+        "pk_test_51HTcrZHu94wrZKIKzR0OEW1lIydXOEN0tpCsixuceKg3cEMtmCkxk6hIetcf63avXEiq4mn8pXtuOpJLs8uef6rm00tGcDL9W5"
+      )
+    );
   }, []);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    let prod = cart.map(({ stripe, quantity }) => ({
+      price: stripe,
+      quantity: quantity,
+    }));
+
+    const { error } = await stripe.redirectToCheckout({
+      lineItems: prod,
+      mode: "payment",
+      successUrl: "http://localhost:8000/success",
+      cancelUrl: "http://localhost:8000/fail",
+    });
+    if (error) {
+      throw error;
+    }
+  };
 
   return (
     <div className="bag">
@@ -54,4 +78,30 @@ const Cart = () => {
           })}
         </div>
         <div className="bag-taxes">
-    
+          <input className="tax-input" type="text" placeholder="Enter a code" />
+          <div className="tax-item">
+            <p>Items Subtotal:</p>
+            <span>$ {total - 2.5}</span>
+          </div>
+          <div className="tax-item">
+            <p>Delivery Fee:</p>
+            <span>$ 1</span>
+          </div>
+          <div className="tax-item">
+            <p>Tax and fees:</p>
+            <span>$ 2.50</span>
+          </div>
+          <div className="tax-item mayor">
+            <p>Total:</p>
+            <span>$ {total + 1}</span>
+          </div>
+          <button onClick={handleSubmit} className="btn-checkout">
+            Proceed to checkout
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Cart;

@@ -18,9 +18,11 @@ exports.createPages = async ({ graphql, actions }) => {
       allMenu {
         edges {
           node {
-            precio
+            ingredientes
             nombre
             imagen
+            stripe
+            precio
           }
         }
       }
