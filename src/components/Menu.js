@@ -1,13 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import "../styles/menu.css";
 import bag from "../images/shopping-bag.svg";
 import { Link } from "gatsby";
 import Image from "./Image";
 import MenuList from "./MenuList";
+import { CartContext } from "../context";
 
 const Menu = ({ menu }) => {
   const [btn, setBtn] = useState("btn-amarillo-menu");
   const [btnFeo, setBtnFeo] = useState("btn-vacio-menu");
+  const { estado, setEstado } = useContext(CartContext);
 
   const handleBtn = () => {
     setBtn("btn-vacio-menu");
@@ -20,6 +22,7 @@ const Menu = ({ menu }) => {
   };
 
   const handleMenu = (e) => {
+    //Cambiando el color al hacer click
     const menus = document.querySelectorAll(".vacio");
 
     menus.forEach((item) => {
@@ -29,6 +32,24 @@ const Menu = ({ menu }) => {
     });
 
     e.target.classList.toggle("rojo");
+
+    handleState(e.target.textContent);
+  };
+
+  const handleState = (menu) => {
+    if (menu === "Shakes") {
+      const menuShakes = estado.all.filter((item) => {
+        return item.node.side === "shake";
+      });
+      setEstado({ ...estado, shakes: menuShakes, burgers: [] });
+    }
+
+    if (menu === "Burgers") {
+      const menuBurgers = estado.all.filter((item) => {
+        return item.node.side === "burger";
+      });
+      setEstado({ ...estado, burgers: menuBurgers, shakes: [] });
+    }
   };
 
   return (
@@ -49,34 +70,15 @@ const Menu = ({ menu }) => {
           Burgers
         </button>
         <button onClick={(e) => handleMenu(e)} className="vacio">
-          Burgers
+          Shakes
         </button>
         <button onClick={(e) => handleMenu(e)} className="vacio">
-          Burgers
+          Drinks
         </button>
         <div className="loco"></div>
       </ul>
       <div className="menu-container">
-        {menu.map(({ node }) => {
-          return (
-            <div className="burger-container">
-              <Link to={`/${node.nombre}`}>
-                <div className="img-container">
-                  <Image name="bigMac"></Image>
-                </div>
-              </Link>
-              <div className="burger-details">
-                <h6 className="burger-name">{node.nombre}</h6>
-                <div className="d-flex justify-content-between align-items-center">
-                  <p className="burger-price mb-0">${node.precio}</p>
-                  <div className="bagte">
-                    <img className="bag" src={bag} alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          );
-        })}
+        <MenuList menu={menu} />
       </div>
     </section>
   );

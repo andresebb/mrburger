@@ -5,10 +5,26 @@ export const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
+  const [estado, setEstado] = useState({
+    all: [],
+    burgers: [],
+    shakes: [],
+  });
 
-  //Agregar al carrito
   const addToCart = (element) => {
-    setCart([...cart, element]);
+    const exist = cart.find((item) => item.nombre === element.nombre);
+    debugger;
+    if (exist) {
+      setCart(
+        cart.map((item) =>
+          item.nombre === exist.nombre
+            ? { ...item, quantity: item.quantity + element.quantity }
+            : item
+        )
+      );
+    } else {
+      setCart([...cart, element]);
+    }
   };
 
   //Set Local Storage
@@ -23,6 +39,8 @@ export const CartProvider = ({ children }) => {
         cart,
         addToCart,
         setLocalStorage,
+        estado,
+        setEstado,
       }}
     >
       {children}

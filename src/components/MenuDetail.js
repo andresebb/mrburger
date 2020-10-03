@@ -5,15 +5,7 @@ import back from "../images/previous.svg";
 import { CartContext } from "../context";
 import Ingredientes from "./Ingredientes";
 
-const MenuDetail = ({
-  nombre,
-  precio,
-  imagen,
-  stripe,
-  ingredientes,
-  probando,
-}) => {
-  debugger;
+const MenuDetail = ({ nombre, precio, imagen, stripe, ingredientes }) => {
   const [quantity, setQuantity] = useState(1);
   const [dinero, setDinero] = useState({
     montoTotal: precio,

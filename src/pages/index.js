@@ -11,6 +11,7 @@ export const query = graphql`
           nombre
           imagen
           precio
+          side
         }
       }
     }

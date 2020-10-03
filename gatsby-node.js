@@ -22,6 +22,8 @@ exports.createPages = async ({ graphql, actions }) => {
             nombre
             imagen
             stripe
+            side
+            nuevo
             precio
           }
         }

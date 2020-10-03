@@ -40,9 +40,10 @@ module.exports = {
             map: (doc) => ({
               nombre: doc.nombre,
               ingredientes: doc.ingredientes,
-              precio: doc.precio,
               imagen: doc.imagen,
               stripe: doc.stripe,
+              precio: doc.precio,
+              side: doc.side,
               nuevo: doc.nuevo,
             }),
           },

@@ -1,7 +1,6 @@
 import React from "react";
 
 const Ingredientes = ({ ingredientes }) => {
-  debugger;
   return (
     <div>
       <span className="rojito">Ingredientes</span>
@@ -129,6 +128,37 @@ const Ingredientes = ({ ingredientes }) => {
                   <p>{ingrediente}</p>
                 </div>
               );
+            case "Vanilla Reduced Fat Ice Cream":
+              return (
+                <div className="ingrediente">
+                  <img
+                    src="https://www.mcdonalds.com/content/dam/usa/nfl/nutrition/ingredients/regular/vanilla_reduced_fat_cream.png"
+                    alt=""
+                  />
+                  <p>{ingrediente}</p>
+                </div>
+              );
+            case "Chocolate Shake Syrup":
+              return (
+                <div className="ingrediente">
+                  <img
+                    src="https://www.mcdonalds.com/content/dam/usa/nfl/nutrition/ingredients/regular/chocolate_shake_syrup.png"
+                    alt=""
+                  />
+                  <p>{ingrediente}</p>
+                </div>
+              );
+            case "Whipped Light Cream":
+              return (
+                <div className="ingrediente">
+                  <img
+                    src="https://www.mcdonalds.com/content/dam/usa/nfl/nutrition/ingredients/regular/whipped_cream.png"
+                    alt=""
+                  />
+                  <p>{ingrediente}</p>
+                </div>
+              );
+
             default:
               return (
                 <div className="ingrediente">
