@@ -52,16 +52,18 @@ const MenuDetail = ({ nombre, precio, imagen, stripe, ingredientes }) => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
               maxime sed voluptatibus necessitatibus dignissimos unde?
             </p>
-            <div className="btn-control">
-              <button onClick={handleQuit}>-</button>
-              <input className="input-control" type="text" value={quantity} />
-              <button onClick={handlePlus}>+</button>
-            </div>
-            <div className="precio-container">
-              <p className="precio">${dinero.montoTotal}</p>
-              <button onClick={handleSubmit} className="add">
-                Add to Bag
-              </button>
+            <div className="patron">
+              <div className="btn-control">
+                <button onClick={handleQuit}>-</button>
+                <input className="input-control" type="text" value={quantity} />
+                <button onClick={handlePlus}>+</button>
+              </div>
+              <div className="precio-container">
+                <p className="precio">${dinero.montoTotal}</p>
+                <button onClick={handleSubmit} className="add">
+                  Add to Bag
+                </button>
+              </div>
             </div>
           </div>
         </div>

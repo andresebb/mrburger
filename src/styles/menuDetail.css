@@ -101,3 +101,55 @@
   text-align: center;
   outline: none;
 }
+
+@media (max-width: 750px) {
+  .menuDetail {
+    height: auto;
+  }
+
+  .menuDetail-container {
+    display: block;
+    padding: 0 2rem;
+    margin-top: 2rem;
+  }
+
+  .text-detail {
+    margin-left: 0;
+    max-width: none;
+  }
+
+  .burger-img {
+    max-width: 250px;
+  }
+
+  .patron {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .btn-control {
+    margin: 0;
+  }
+
+  .add {
+    padding: 0;
+  }
+
+  .btn-control {
+    width: 50%;
+  }
+
+  .input-control {
+    width: 20%;
+  }
+
+  .ingrediente img {
+    max-width: 150px;
+  }
+
+  .ingrediente p {
+    color: #333333;
+  }
+}

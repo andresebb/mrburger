@@ -6,12 +6,12 @@ import "../styles/hero.css";
 const Hero = () => {
   return (
     <StyledJumbo>
-      <div>
+      <div className="hero-legal">
         <span className="hero-span">MARCH OFFERS</span>
         <h1 className="hero-title">3$ OFF BIG MAG DEAL</h1>
         <p className="hero-description">
-          the one and only Big Mac, served with our world Famous Frier <br />
-          and your choice of an icy soft drink.
+          the one and only Big Mac, served with our world Famous Frier and your
+          choice of an icy soft drink.
         </p>
         <button className="btn-amarillo">Find out more</button>
       </div>

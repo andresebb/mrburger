@@ -124,3 +124,43 @@ p {
   max-width: 40%;
   margin: 0 auto;
 }
+
+@media (max-width: 750px) {
+  .bag-container {
+    grid-template-columns: auto;
+  }
+
+  .product-name {
+    align-items: center;
+  }
+
+  .product-img {
+    max-width: 60px;
+  }
+
+  .product-detail {
+    grid-template-columns: 40% 27% 27% 8%;
+  }
+
+  table {
+    grid-template-columns: 40% 27% 27% 8%;
+  }
+}
+
+@media (max-width: 450px) {
+  .product-name {
+    display: block;
+  }
+
+  .product-name p {
+    font-size: 14px;
+  }
+
+  .product-detail {
+    grid-template-columns: 30% 30% 30% 10%;
+  }
+
+  .table {
+    grid-template-columns: 30% 30% 30% 10%;
+  }
+}

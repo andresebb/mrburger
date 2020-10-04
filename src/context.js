@@ -1,5 +1,6 @@
 //Creando el contexto
 import React, { createContext, useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
 
 export const CartContext = createContext();
 
@@ -9,11 +10,18 @@ export const CartProvider = ({ children }) => {
     all: [],
     burgers: [],
     shakes: [],
+    drinks: [],
+    desserts: [],
   });
 
   const addToCart = (element) => {
+    toast("new Product added", {
+      type: "warning",
+      autoClose: 1000,
+    });
+
     const exist = cart.find((item) => item.nombre === element.nombre);
-    debugger;
+
     if (exist) {
       setCart(
         cart.map((item) =>
@@ -44,6 +52,7 @@ export const CartProvider = ({ children }) => {
       }}
     >
       {children}
+      <ToastContainer />
     </CartContext.Provider>
   );
 };

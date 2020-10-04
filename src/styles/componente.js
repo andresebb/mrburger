@@ -64,7 +64,7 @@ export const StyledJumbo = styled.div`
   background: #f5f5f5;
   align-items: center;
   justify-content: center;
-  padding: 6rem 2rem 0 2rem;
+  padding: 6rem 1rem 0 1rem;
   color: black;
   margin-bottom: 5rem;
   overflow: hidden;
@@ -72,10 +72,16 @@ export const StyledJumbo = styled.div`
 
   div {
     width: 80vw;
+    margin: 0 auto;
   }
 
   & img {
     width: 50vw;
+  }
+
+  @media (max-width: 750px) {
+    display: block;
+    height: auto;
   }
 `;
 
