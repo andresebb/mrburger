@@ -104,22 +104,32 @@
 
 @media (max-width: 750px) {
   .menuDetail {
-    height: auto;
+    height: 70vh;
   }
 
   .menuDetail-container {
     display: block;
     padding: 0 2rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
 
   .text-detail {
     margin-left: 0;
     max-width: none;
+    text-align: center;
+  }
+
+  .text-detail h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .text-detail p {
+    font-size: 14px;
   }
 
   .burger-img {
-    max-width: 250px;
+    max-width: 150px;
   }
 
   .patron {
@@ -146,7 +156,8 @@
   }
 
   .ingrediente img {
-    max-width: 150px;
+    max-width: 100px;
+    margin-bottom: 1rem;
   }
 
   .ingrediente p {

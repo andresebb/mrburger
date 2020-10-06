@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import Hero from "../components/Hero";
 import Menu from "../components/Menu";
+import About from "../components/About";
 
 export const query = graphql`
   query MyQuery {
@@ -23,6 +24,7 @@ const index = ({ data }) => {
     <>
       <Hero />
       <Menu menu={data.allMenu.edges} />
+      <About />
     </>
   );
 };

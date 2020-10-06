@@ -83,6 +83,10 @@ export const StyledJumbo = styled.div`
     display: block;
     height: auto;
   }
+  @media (max-width: 750px) {
+    display: grid;
+    height: 100vh;
+  }
 `;
 
 export const StyledProducts = styled.div`

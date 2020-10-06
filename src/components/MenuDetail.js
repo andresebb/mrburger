@@ -1,9 +1,9 @@
 import React, { useState, useContext } from "react";
 import { Link } from "gatsby";
 import "../styles/menuDetail.css";
-import back from "../images/previous.svg";
 import { CartContext } from "../context";
 import Ingredientes from "./Ingredientes";
+import Back from "./back";
 
 const MenuDetail = ({ nombre, precio, imagen, stripe, ingredientes }) => {
   const [quantity, setQuantity] = useState(1);
@@ -39,8 +39,7 @@ const MenuDetail = ({ nombre, precio, imagen, stripe, ingredientes }) => {
 
   return (
     <div>
-      <img width="12px" src={back} alt="" />
-      <Link to="/">Back to Menu</Link>
+      <Back />
       <div className="menuDetail">
         <div className="menuDetail-container">
           <div>

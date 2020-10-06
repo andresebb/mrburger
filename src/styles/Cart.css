@@ -14,15 +14,22 @@ p {
 }
 
 .title-container {
-  display: grid;
-  grid-template-columns: 40% 40%;
-  width: 80%;
-  margin: 0 auto;
+  text-align: center;
 }
 
 .back-button {
   display: flex;
   align-items: center;
+  margin-top: 5rem;
+  margin-left: 1rem;
+}
+
+.boton-feo {
+  border: none;
+  background: none;
+  width: 100%;
+  padding: 0;
+  outline: none;
 }
 
 .center {

@@ -147,7 +147,7 @@ body {
 }
 
 .loco {
-  width: 100%;
+  width: 100vw;
   height: 4px;
   position: absolute;
   background: #e2e2e2;

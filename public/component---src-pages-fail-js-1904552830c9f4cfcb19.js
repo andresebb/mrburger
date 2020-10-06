@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{k7qv:function(n,e,o){"use strict";o.r(e);var t=o("q1tI"),r=o.n(t);e.default=function(){return r.a.createElement("div",null,"No pudimos procesar tu compra")}}}]);
+//# sourceMappingURL=component---src-pages-fail-js-1904552830c9f4cfcb19.js.map

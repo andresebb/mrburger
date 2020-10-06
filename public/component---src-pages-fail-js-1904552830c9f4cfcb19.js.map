@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/fail.js"],"names":["fail"],"mappings":"2FAAA,gCAMeA,UAJF,WACX,OAAO","file":"component---src-pages-fail-js-1904552830c9f4cfcb19.js","sourcesContent":["import React from \"react\";\r\n\r\nconst fail = () => {\r\n  return <div>No pudimos procesar tu compra</div>;\r\n};\r\n\r\nexport default fail;\r\n"],"sourceRoot":""}
