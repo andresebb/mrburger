@@ -1,14 +1,17 @@
 var plugins = [{
-      plugin: require('C:/Users/andres/Documents/proyectos/mc/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('C:/Users/aebb0/Documents/mrburger/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('C:/Users/andres/Documents/proyectos/mc/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
+      plugin: require('C:/Users/aebb0/Documents/mrburger/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('C:/Users/andres/Documents/proyectos/mc/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      plugin: require('C:/Users/aebb0/Documents/mrburger/node_modules/gatsby-plugin-stripe/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
+      plugin: require('C:/Users/aebb0/Documents/mrburger/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"cache_busting_mode":"query","include_favicon":true,"legacy":true,"theme_color_in_head":true,"cacheDigest":null},
     },{
-      plugin: require('C:/Users/andres/Documents/proyectos/mc/gatsby-ssr'),
+      plugin: require('C:/Users/aebb0/Documents/mrburger/gatsby-ssr'),
       options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:

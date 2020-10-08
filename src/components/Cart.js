@@ -48,12 +48,11 @@ const Cart = () => {
   //Removiendo item del carrito
 
   const handleRemove = (e) => {
+    cart.find((item) => item.nombre === e.nombre);
+
     //Quitandolo del dom
     e.target.parentElement.parentElement.remove();
     console.log(cart);
-    debugger;
-
-    cart.find((item) => item.nombre === element.nombre);
   };
 
   return (
